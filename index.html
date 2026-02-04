@@ -114,5 +114,10 @@
 </html>
 
 
-<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-<script>LA.init({id:"JVAYUQ03pfwPj0si",ck:"JVAYUQ03pfwPj0si"})</script>
+<script async charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>
+        // 只有在联网状态下才初始化计数器
+        if (navigator.onLine) {
+            LA.init({id:"JVAYUQ03pfwPj0si",ck:"JVAYUQ03pfwPj0si"})
+        }
+    </script>
